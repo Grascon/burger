@@ -1,0 +1,56 @@
+body, html {
+    background-image: url(../img/intersection.png);
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.title {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #cc0e00;
+    color: white;
+    padding: 10px;
+}
+h1 {
+    font-weight: bolder;
+}
+#flash {
+    color: gold;
+}
+.col-lg-12, .col-lg-4 {
+    text-align: center;
+}
+h2 {
+    color: #cc0e00;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    font-weight: bolder;
+}
+.btn {
+    background-color: #cc0e00;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+p {
+    text-decoration: underline;
+    text-decoration-color: #cc0e00;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #cc0e00;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+a {
+    color: gold;
+}
