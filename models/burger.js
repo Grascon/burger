@@ -1,3 +1,4 @@
+//requiring orm.js to use orm functions
 var orm = require("../config/orm.js");
 
 var burger = {
@@ -19,4 +20,5 @@ var burger = {
   }
 };
 
+//exporting burger
 module.exports = burger;

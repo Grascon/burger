@@ -13,6 +13,7 @@ body {
     background-color: #cc0e00;
     color: white;
     padding: 10px;
+    
 }
 h1 {
     font-weight: bolder;
@@ -20,14 +21,25 @@ h1 {
 #flash {
     color: gold;
 }
+.col-lg-12{
+    margin-bottom: 10px;
+}
 .col-lg-12, .col-lg-4 {
     text-align: center;
+}
+.display {
+    background-color: white;
+    border: 1px solid rgb(153, 152, 152);
+    border-radius: 15px;
 }
 h2 {
     color: #cc0e00;
     text-decoration: underline;
     text-decoration-color: gold;
     font-weight: bolder;
+}
+input {
+    text-align: center;
 }
 .btn {
     background-color: #cc0e00;
@@ -38,8 +50,6 @@ h2 {
 }
 
 p {
-    text-decoration: underline;
-    text-decoration-color: #cc0e00;
     font-weight: bold;
 }
 

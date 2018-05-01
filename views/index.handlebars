@@ -4,35 +4,41 @@
       <img src="assets/img/Burger.JPG" width="300" height="250" align="center">      
     </div>
     <div class="col-lg-4">
-      <h2>Burgers Ready to Eat</h2>
-      {{#each burgers}}
-        {{#unless this.devoured}}
-          <div class="uneaten-burgers">
-            <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-              <button type="submit" class="btn burgerAvailable"> {{this.burger_name}} <span class="glyphicon glyphicon-flash" id="flash"></span></button>
-              <br>
-            </form>
-          </div>
-        {{/unless}}
-      {{/each}}
+      <div class="display">
+        <h2>Burgers Ready to Eat</h2>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div class="uneaten-burgers">
+              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                {{this.id}} | <button type="submit" class="btn burgerAvailable">{{this.burger_name}} <span class="glyphicon glyphicon-flash" id="flash"></span></button>
+                <br>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
     </div>
     <div class="col-lg-4">
-      <h2>Add a Burger</h2>
-      <form action="/burgers" method="POST">
-        <input type="text" id="name" name="burger_name">
-        <br>
-        <button type="submit" class= "btn addBurgerButton">Add Your Burger</button>
-      </form>  
+      <div class="display">
+        <h2>Add a Burger</h2>
+        <form action="/burgers" method="POST">
+          <input type="text" id="name" name="burger_name">
+          <br>
+          <button type="submit" class= "btn addBurgerButton">Add Your Burger</button>
+        </form>
+      </div>
     </div>
     <div class="col-lg-4">
-      <h2>Burgers Eaten</h2>
-      {{#each burgers}}
-        {{#if this.devoured}}
-          <div class="eaten-burgers">
-            <p>* {{this.burger_name}}</p>
-          </div>
-        {{/if}}
-      {{/each}}
+      <div class="display">
+        <h2>Burgers Eaten</h2>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class="eaten-burgers">
+              <p>{{this.id}} | {{this.burger_name}} |</p>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </div>
