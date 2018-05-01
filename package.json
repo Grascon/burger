@@ -2,7 +2,7 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "<h1>Fast Burger</h1>\r <p>Welcome to Fast Burger! This app that lets users create burgers they want to eat and eat them lightning fast!</p>",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
