@@ -12,14 +12,12 @@ app.use(express.static("public"));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-
 // parse application/json
 app.use(bodyParser.json());
 
 //using methodOverride to send POST request
 //http://philipm.at/2017/method-override_in_expressjs.html
 app.use(methodOverride('_method'));
-
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
@@ -34,5 +32,5 @@ app.use(routes);
 
 //starting our servers
 app.listen(PORT, function() {
-  console.log("App now listening at localhost:" + PORT);
+  console.log("App now listening on: http://localhost:" + PORT);
 });
